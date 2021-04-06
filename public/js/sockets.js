@@ -1,5 +1,9 @@
+const endpoint = window.location.hostname === 'localhost'
+  ? 'localhost:2121'
+  : 'https://webrtc-test-ws.herokuapp.com';
+
 const createSocketConnection = () => io.connect(
-  'https://webrtc-test-ws.herokuapp.com',
+  endpoint,
   {
     reconnection: true,
     reconnectionAttempts: 10,

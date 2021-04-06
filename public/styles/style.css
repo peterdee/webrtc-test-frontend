@@ -31,12 +31,17 @@ footer {
   height: calc(100vh - var(--footer-height));
   justify-content: center;
   margin: 0 auto;
-  width: 400px;
+  width: 100%;
 }
 .title {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
+}
+.centered {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 button {
   background-color: var(--accent);
@@ -45,6 +50,7 @@ button {
   color: white;
   cursor: pointer;
   min-width: 250px;
+  max-width: 400px;
   outline: none;
   padding: var(--spacer);
   transition: background-color 160ms ease-in;
@@ -64,7 +70,7 @@ button:hover {
   flex-wrap: wrap;
 }
 video {
-  max-width: 150px;
+  max-width: 45%;
 }
 input {
   background-color: #f0f0f0;

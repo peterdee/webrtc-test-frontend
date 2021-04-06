@@ -106,7 +106,7 @@ async function joinCall(anchor = '') {
     Please provide Call ID
   </div>
   <form
-    class="call"
+    class="centered"
     id="connect-form"
   >
     <input
