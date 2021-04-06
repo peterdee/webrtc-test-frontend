@@ -2,7 +2,7 @@ let localStream = null;
 let remoteStream = null;
 
 async function createCall(anchor = '') {
-  localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+  localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
   remoteStream = new MediaStream();
 
   $(`#${anchor}`).empty().append(`

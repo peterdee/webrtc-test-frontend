@@ -2,7 +2,7 @@ let localJoinStream = null;
 let remoteJoinStream = null;
 
 async function connect(callId = '', anchor = '') {
-  localJoinStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+  localJoinStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
   remoteJoinStream = new MediaStream();
 
   const RTCConnection = createRTCConnection();
