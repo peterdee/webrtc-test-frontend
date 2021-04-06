@@ -9,8 +9,8 @@ const createRTCConnection = () => new RTCPeerConnection({
     },
     {
       urls: 'turn:relay.backups.cz',
-      password: 'webrtc',
-      username: 'webrtc'
+      credential: 'webrtc',
+      username: 'webrtc',
     },
   ],
 });
