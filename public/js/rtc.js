@@ -7,5 +7,10 @@ const createRTCConnection = () => new RTCPeerConnection({
         'stun:stun2.l.google.com:19302',
       ],
     },
+    {
+      urls: 'turn:relay.backups.cz',
+      password: 'webrtc',
+      username: 'webrtc'
+    },
   ],
 });
