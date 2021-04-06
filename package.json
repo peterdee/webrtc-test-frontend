@@ -1,7 +1,22 @@
 {
   "name": "webrtc-test-frontend",
   "version": "1.0.0",
+  "description": "Testing WebRTC capabilities",
   "private": true,
+  "author": {
+    "name": "Peter Dyumin",
+    "url": "https://github.com/peterdee"
+  },
+  "homepage": "https://github.com/peterdee/webrtc-test-frontend",
+  "license": "MIT",
+  "engines": {
+    "node": "~14.16.0",
+    "npm": "~7.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterdee/webrtc-test-frontend"
+  },
   "scripts": {
     "dev": "nodemon ./app.js",
     "start": "node ./app.js"
